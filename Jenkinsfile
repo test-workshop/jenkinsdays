@@ -6,7 +6,7 @@ pipeline {
     stage('Hello') {
       steps {
         echo 'Checkout the code'
-        sh 'echo "static code analysis"'
+        sh 'java -version'
       }
     }
   }
