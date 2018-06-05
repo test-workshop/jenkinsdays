@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'jdk8'
+  }
   stages {
     stage('Hello') {
       steps {
