@@ -18,6 +18,11 @@ pipeline {
         echo 'Continuing with deployment'
       }
     }
+    stage('Scan') {
+      steps {
+        echo 'Test Msg'
+      }
+    }
   }
   environment {
     MY_NAME = 'Luciano'
