@@ -38,6 +38,11 @@ pipeline {
         echo 'Test Msg'
       }
     }
+    stage('Security Scan') {
+      steps {
+        sh 'echo "doing security scan"'
+      }
+    }
   }
   environment {
     MY_NAME = 'Luciano'
